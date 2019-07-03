@@ -75,46 +75,28 @@ public class ShipMovementController : MonoBehaviour
         Shift = 0.0f;
     }
 
-    void Start()
-    {
-    }
+    void Start() {}
 
     void Update()
     {
         if (gameOver) return;
 
         if (Input.GetKey(KeyCode.UpArrow))
-        {
             MoveForward();
-        }
         else if (Input.GetKey(KeyCode.DownArrow))
-        {
             MoveBackward();
-        }
         else
-        {
             FadeX();
-        }
 
         if (Input.GetKey(KeyCode.LeftArrow))
-        {
             MoveLeft();
-        }
         else if (Input.GetKey(KeyCode.RightArrow))
-        {
             MoveRight();
-        }
         else
-        {
             FadeY();
-        }
 
         if (Input.GetKey(KeyCode.Space))
-        {
             Shoot();
-        }
-
-        if (Input.GetKey(KeyCode.Z)) Hit(null);
 
         transform.localPosition = new Vector3(transform.localPosition.x + Shift,
             transform.localPosition.y,

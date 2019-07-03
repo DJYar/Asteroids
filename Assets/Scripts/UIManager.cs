@@ -1,20 +1,12 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class UIManager : MonoBehaviour
 {
     public Canvas canvas;
 
-    void Start()
-    {
-        
-    }
+    void Start() { }
 
-    void Update()
-    {
-        
-    }
+    void Update() { }
 
     public void GameOver()
     {
